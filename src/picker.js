@@ -57,6 +57,7 @@ export default class Picker extends Component {
         {pickerData.map((data, index) => (
           <PickerItem
             key={index}
+            color='white'
             value={typeof data.value !== 'undefined' ? data.value : data}
             label={typeof data.label !== 'undefined' ? data.label : data.toString()}
           />
